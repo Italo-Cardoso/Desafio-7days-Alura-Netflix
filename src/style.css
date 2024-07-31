@@ -162,3 +162,28 @@ body {
 .img__cabecalho {
     width: 100%;
 }
+
+.minha-lista {
+    width: 105%;
+    margin-top: 10rem;
+    margin-left: 3.5rem;    
+}
+
+.minha-lista__subtitle {
+    color: white;
+    font-family: inherit;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.minha-lista__poster {
+    display: flex;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    column-gap: .5rem;
+}
+
+.minha-lista__poster::-webkit-scrollbar {
+    width: 0px;
+}
