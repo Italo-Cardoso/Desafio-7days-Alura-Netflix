@@ -1,37 +1,79 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clone Netflix</title>
-    <link rel="stylesheet" href="./src/style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clone Netflix</title>
+  <link rel="stylesheet" href="src/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>   
-    <header class="cabecalho">
 
-    </header>
+<body>
+  <div class="app__background">
+    <div class="app__hero">
+
+			<header class="navbar">
+				<ul class="navbar__lista">
+                    <img src="/src/img/logo.jpg" alt="" class="navbar__logo">
+                    
+                    <li class="navbar__lista__item">
+                        Inicio
+                    </li>
+                    <li class="navbar__lista__item">
+                        Séries
+                    </li>
+                    <li class="navbar__lista__item">
+                        Filmes
+                    </li>
+                    <li class="navbar__lista__item">
+                        Bombando
+                    </li>
+                    <li class="navbar__lista__item">
+                        Minha lista
+                    </li>
+                    <div class="navbar__lista__item__end">
+                        <i class="fa fa-search"></i>
+                        <i class="fa fa-bell"></i>
+                        <img src="/src/img/user.png" alt="" class="navbar__lista__item__end__avatar">
+                        <i class="fa fa-arrow-down"></i>
+                    </div>                
+                </ul>
 
 
-    
-    <main class="corpo">
-        <div class="poster">
-            <img src="/img/poster1.png" alt="" class="poster__fundo">
-            <p class="poster__texto">Em uma penitenciária de última geração, um detento<br>participa de um experimento com drogas que controlam as<br>emoçoes para um gênio da indústria farmacêutica.</p>
-        </div>
+                
+			</header>
 
-        <div class="botao">
-            <button class="botao__assistir">
-                Assistir
+		 <!-- Main -->
+      <main>
+        <!-- Banner -->
+        <div class="banner">
+          <img class="banner__poster" src="./src/img/poster1.png" alt="Banner filme
+            Spiderhead" />
+          <span class="banner__subtitle">Em uma penitenciária de última geração, um detento participa de um experimento com drogas que controlam as emoções para um gênio da indústria farmacêutica.</span>
+
+          <div class="banner__btn">
+            <button type="submit" class="banner__btn--play">
+              <i class="fas fa-play"></i>
+
+              Assistir
             </button>
-            <button class="botao__informacoes">
-                Mais informações
+            <button class="banner__btn--info">
+              <i class="fas fa-thin fa-circle-info"></i>Mais informações
             </button>
+          </div>
         </div>
-    </main>
+        <!-- Fim do Banner -->
+			</main>
 
-    <footer class="footer">
+			<footer>
+				<!-- Rodapé do site -->
+			</footer>
 
-    </footer>
-    
+		</div>
+  </div>
 </body>
 </html>
