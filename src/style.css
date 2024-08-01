@@ -188,8 +188,17 @@ body {
     margin-bottom: 1.5rem;
 }
 
-.minha-lista__poster1::-webkit-scrollbar {
-    width: 0;
+.minha-lista__poster::-webkit-scrollbar {
+    width: 10px;
+}
+
+.minha-lista__poster::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.minha-lista__poster::-webkit-scrollbar-thumb{
+    background: rgba(109, 109, 110, 0.7);
+    border-radius: 10px;
 }
 
 .minha-lista__poster1 {
@@ -203,6 +212,8 @@ body {
     transition: .5s;
 }
 
-@media (max-width: 720px) {
-
+@media (max-width: 1440px) {
+    .minha-lista__poster::-webkit-scrollbar {
+        display: none;
+    }
 }
