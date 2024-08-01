@@ -26,7 +26,7 @@ body {
 }
 
 .navbar {
-    width: 100vw;
+    width: 100%;
 }
 
 .navbar__lista {
@@ -47,6 +47,7 @@ body {
     color: white;
     list-style: none;
     cursor: pointer;
+    text-wrap: nowrap;
     transform: scale(1)  translateY(0.0);
     transition: 0.5s;
 }
@@ -58,7 +59,7 @@ body {
 }
 
 .navbar__lista__item__end {
-    margin-left: 900px;
+    margin-left: 35rem;
     display: flex;
     align-items: center;
     column-gap: 1rem;
@@ -164,12 +165,22 @@ body {
 }
 
 .minha-lista {
-    width: 105%;
+    width: 100.3%;
     margin-top: 10rem;
-    margin-left: 3.5rem;    
+    margin-left: 3.0rem;    
+}
+
+.minha-lista__poster {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto 1fr;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    column-gap: 1rem;
 }
 
 .minha-lista__subtitle {
+    grid-row: 1 / 2;
     color: white;
     font-family: inherit;
     font-size: 1.2em;
@@ -177,13 +188,20 @@ body {
     margin-bottom: 1.5rem;
 }
 
-.minha-lista__poster {
-    display: flex;
-    overflow-x: scroll;
-    flex-wrap: nowrap;
-    column-gap: .5rem;
+.minha-lista__poster1::-webkit-scrollbar {
+    width: 0;
 }
 
-.minha-lista__poster::-webkit-scrollbar {
-    width: 0px;
+.minha-lista__poster1 {
+    grid-row: 2/3;
+    transform: scale(1) translateY(0);
+    transition: .5s;
+}
+
+.minha-lista__poster1:hover {
+    transform: scale(1.05) translateY(.125rem);
+    transition: .5s;
+}
+
+@media (max-width: 720px) {
 }
