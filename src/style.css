@@ -170,22 +170,19 @@ body {
     margin-left: 3.0rem;    
 }
 
-.minha-lista__poster {
+section {
+    width: 100%;
+    position: relative;
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: auto 1fr;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-    column-gap: 1rem;
+    grid-template-columns: repeat(5, auto);
+    margin: 20px 0;
 }
 
 .minha-lista__subtitle {
-    grid-row: 1 / 2;
-    color: white;
-    font-family: inherit;
-    font-size: 1.2em;
+    color: #e5e5e5e5;
+    font-size: 18px;
+    line-height: 17px;
     font-weight: 600;
-    margin-bottom: 1.5rem;
 }
 
 .minha-lista__poster::-webkit-scrollbar {
@@ -201,10 +198,16 @@ body {
     border-radius: 10px;
 }
 
-.minha-lista__poster1 {
-    grid-row: 2/3;
+.minha-lista__poster {
+    padding: 0 2px;
+    transition: 250ms all;
     transform: scale(1) translateY(0);
     transition: .5s;
+}
+
+.minha-lista__poster img {
+    max-width: 100%;
+    padding-right: 5px;
 }
 
 .minha-lista__poster1:hover {
